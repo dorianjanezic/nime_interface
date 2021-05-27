@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.15/Tone.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>performer interface</title>
+</head>
+<body>
+<div class="flex">
+
+    <div class="synth">
+        <h1>Synth</h1>
+        <button id="synth">Start</button>
+        <input type="range" min="-100" max="10" value="-6" id="volumeslider" name="synth">
+    </div>
+
+    <div class="autoFilter">
+        <h1>AutoFilter</h1>
+        <button id="filterstart">Start</button>
+        <input type="range" min="0" max="300" value="-6" id="autofilter" name="autofilter">
+    </div>
+
+    <div id="chorus">
+        <h1>Chorus</h1>
+        <button id="chorus">Start</button>
+        <input type="range" min="-60" max="0" value="-6" name="chorus">
+    </div>
+
+    <div id="distortion">
+        <h1>Distortion</h1>
+        <button>Start</button>
+        <input type="range" min="-60" max="0" value="-6" name="distortion">
+    </div>
+
+    <div id="PingPongDelay">
+        <h1>PingPongDelay</h1>
+        <button id="pingpong">Start</button>
+        <input type="range" min="-60" max="0" value="-6" id="pingpongslider" name="PingPongDelay">
+    </div>
+
+    <div id="reverb">
+        <h1>Reverb</h1>
+        <button>Start</button>
+        <input type="range" min="-1" max="1" value="0.1" name="reverb">
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
